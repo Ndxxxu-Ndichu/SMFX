@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Documentation - Aria Business HTML Landing Page Template</title>
+
+    <!-- Styles -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bootstrap.min1.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles1.css')}}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+			<p>ADMIN<br> CONSOLE</p>
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                </li>
+                <li>
+                    <a href="#forex-education">FOREX EDUCATION</a>
+                </li>
+                <li>
+                    <a href="#forex-rating&reviews">FOREX RATING AND REVIEWS</a>
+				</li>
+				<li>
+                    <a href="#forex-signal&signal-plans">SIGNAL & SIGNAL PLANS</a>
+                </li>
+				<li>
+                    <a href="{{ url_for('login') }}">LOGOUT</a>
+                </li>
+                      </ul>
+        </div>
+        <!-- end of sidebar wrapper -->
+
+
+        <!-- Page Content -->
+         {% with messages = get_flashed_messages() %}
+         {% if messages %}
+               {% for message in messages %}
+                    <p>{{ message }}</p>
+               {% endfor %}
+         {% endif %}
+      {% endwith %}
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="forex-education" class="col-lg-12">
+                        <h1>Forex Education </h1>
+
+						<form id="addpost" method="POST" action="/addpost" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" name="title" id="title" required>
+                            <label class="label-control" for="title">Title</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" name="subtitle" id="subtitle" required>
+                            <label class="label-control" for="subtitle">subtitle</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                            <div class="form-group">
+                            <input type="text" class="form-control-input" name="author" id="author" required>
+                            <label class="label-control" for="author">Author</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" name="content" id="content" required></textarea>
+                            <label class="label-control" for="content">Content</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">POST CONTENT</button>
+                        </div>
+
+                    </form>
+
+
+					<div class="col-lg-12"><hr></div> <!-- gray separator line -->
+
+
+					<div id="forex-rating&reviews" class="col-lg-12">
+                        <h1>Forex Ratings & Reviews</h1>
+						<form id="rating&reviews" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="tradingfirm" required>
+                            <label class="label-control" for="tradingfirm">Trading Firm Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="subjectreview" required>
+                            <label class="label-control" for="subjectreview">Subject</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="content1" required></textarea>
+                            <label class="label-control" for="content1">Content</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">POST CONTENT</button>
+                        </div>
+
+                    </form>
+
+
+					<div class="col-lg-12"><hr></div> <!-- gray separator line -->
+
+						<div id="forex-signal&signal-plans" class="col-lg-12">
+                        <h1>Signal and Signal plans</h1>
+						<form id="signal&signal-plans" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="something" required>
+                            <label class="label-control" for="something">something</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="something1" required>
+                            <label class="label-control" for="something1">something</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="content2" required></textarea>
+                            <label class="label-control" for="content">Content</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">POST CONTENT</button>
+                        </div>
+
+                    </form>
+
+
+
+
+
+
+
+
+
+    <!-- Scripts Libraries -->
+    <script src="{{ url_for('static', filename='jquery1.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min1.js')}}" type="text/javascript"></script>
+
+
+	<!-- Custom Scripts -->
+    <script>
+    <!-- Menu Toggle Script -->
+	$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+	/* Smooth Scrolling To Anchors  */
+		$(function() {
+			$('a[href*="#"]:not([data-toggle="tab"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 700);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>

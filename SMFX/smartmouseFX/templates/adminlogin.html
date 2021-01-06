@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartMouseFX Admin</title>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="{{url_for('static', filename='bootstrap.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='fontawesome-all.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='swiper.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='magnific-popup.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='styles.css')}}" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <a class="nav-link page-scroll" href="/"><h1>SmartMouseFX</h1></a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/">HOME <span class="sr-only">(current)</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/edu"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/s&sp"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/r&r"></a>
+                </li>
+
+
+                <!-- Dropdown Menu -->
+
+                <!-- end of dropdown menu -->
+
+
+            </ul>
+
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Admin Login</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a><img src="{{url_for('static', filename='angle-double-right.png')}}" /><span>Admin Login</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="notification is-danger">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+        {% endwith %}
+
+
+  <form method="POST" action="/admin101">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="username" placeholder="Username" autofocus="">
+                </div>
+            </div>
+      <br>
+      <br>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="password" name="password" placeholder="Password">
+                </div>
+            </div>
+      <br>
+
+
+            <button class="button is-block is-info is-large is-fullwidth">Login</button>
+        </form>
+ <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="#">Tech-Tac Developers</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='jquery.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='popper.min.js')}}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script> <!-- Bootstrap framework -->
+    <script src="{{url_for('static', filename='jquery.easing.min.js')}}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{url_for('static', filename='swiper.min.js')}}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{url_for('static', filename='jquery.magnific-popup.js')}}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{url_for('static', filename='morphext.min.js')}}"></script> <!-- Morphtext rotating text in the header -->
+    <script src="{{url_for('static', filename='isotope.pkgd.min.js')}}"></script> <!-- Isotope for filter -->
+    <script src="{{url_for('static', filename='validator.min.js')}}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{{url_for('static', filename='scripts.js')}}"></script> <!-- Custom scripts -->
+</body>
+</html>

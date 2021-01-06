@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>SmartMouseFX - Home</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{url_for('static', filename='bootstrap.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='fontawesome-all.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='swiper.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='magnific-popup.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='styles.css')}}" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<style>
+    .responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <h2>SmartMouseFX</h2>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="{{url_for('static', filename='menu.png')}}" />
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/edu">FOREX EDUCATION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/s&sp">SIGNALS & SIGNAL PlANS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/r&r">RATINGS AND REVIEWS</a>
+                </li>
+
+
+                <!-- Dropdown Menu -->          
+
+                <!-- end of dropdown menu -->
+
+
+            </ul>
+
+
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="header" style="background-image: url('{{url_for('static', filename='background-image.jpeg')}}')">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>FOREX <span id="js-rotating">EDUCATION, RANKINGS/REVIEWS, SIGNALS & SIGNAL PLAN </span></h1>
+                            <p class="p-heading p-large">SmartmouseFX is a platform for aspiring Forex traders, oferring forex education, ranking and reviews and signals</p>
+                            <a class="btn-solid-lg page-scroll" href="#offers">DISCOVER</a>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Intro -->
+
+
+    <!-- Description -->
+
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">INTRODUCTION</div>
+                    <br>
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="{{url_for('static', filename='books.png')}}" />
+
+                        <div class="card-body">
+                            <h4 class="card-title">Forex Education</h4>
+                            <p>Education about what is Forex, how it operates and if you can become a forex trader</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+
+                    <div class="card">
+                        <img src="{{url_for('static', filename='rank.png')}}" />
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+
+
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Forex Reviews and Rankings</h4>
+                            <p>Complete analysis of the forex trading environment, giving detailed reviews and rankings of various trading firms</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="{{url_for('static', filename='signal.png')}}" />
+
+                        <div class="card-body">
+                            <h4 class="card-title">Signals and Signal plans</h4>
+                            <p>Offering the best signals and signal plans that fit your trading needs</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
+
+
+    <!-- Services -->
+    <div id="offers" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">OFFERS</div>
+                    <h2>Trade with<br>Regulated and Reliable brokers</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                           <img src="{{url_for('static', filename='cmtrading.png')}}" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">CM trading</h3>
+                            <p>Awarded: "Best Kenya Forex Broker 2020"</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Bonus upto $150</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">56 Currency pairs</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Leverage: 200:1</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Kenya deposit methods</div>
+                                </li>
+                            </ul>
+                            <p class="price">Minimum Deposit <span>$1</span></p><br>
+                            <p class="price">Platforms <span>Webtrader, MT4, Mobile Apps</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">Visit Site</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{url_for('static', filename='pepperstone.png')}}" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Pepperstone</h3>
+
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">180 Currency pairs</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Leverage: 500:1</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Spread from 0.0 Pips</div>
+                                </li>
+                            </ul>
+                            <p class="price">Minimum deposit <span>$150</span></p>
+                            <p class="price">Platforms <span>MT4;MT5, cTrader, WebTrader, Mobile Apps</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">Visit Site</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{url_for('static', filename='XM.png')}}" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">XM</h3>
+                            <p>Very popular metatrader forex broker</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">$30 No Deposit Bonus</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">56 Currency pairs</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Levrage: 888:1</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Good for beginers</div>
+                                </li>
+                            </ul>
+                            <p class="price">Minimum deposit <span>$15</span></p>
+                            <p class="price">Platforms <span>Webtrader, MT4/MT5, Mobile Apps</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">Visit Site</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of services -->
+    
+
+    <!-- Details 1 -->
+	<div id="details" class="accordion">
+		<div class="area-1" style="background-image: url('{{url_for('static', filename='best-forex.jpeg')}}')">
+		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
+
+            <!-- Accordion -->
+
+            <div class="accordion-container" id="accordionOne">
+                <h2>Best Forex traders 2020</h2>
+                <div class="item">
+                    <div id="headingOne">
+                        <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
+                            <span class="circle-numbering">1</span><span class="accordion-title">Forex trader Rankings 2020</span>
+                        </span>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                           <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">View</a>
+                        </div>
+                        </div>
+                    </div>
+                </div> <!-- end of item -->
+
+                <div class="item">
+                    <div id="headingTwo">
+                        <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
+                            <span class="circle-numbering">2</span><span class="accordion-title">Our analysis and Reviews</span>
+                        </span>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                            <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">View Reviews</a>
+                        </div>
+                        </div>
+                    </div>
+                </div> <!-- end of item -->
+            
+                <div class="item">
+                    <div id="headingThree">
+                        <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
+                            <span class="circle-numbering">3</span><span class="accordion-title">Signal and Signal Plans</span>
+                        </span>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                           <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">View Signals</a>
+                        </div>
+                        </div>
+                    </div>
+                </div> <!-- end of item -->
+            </div> <!-- end of accordion-container -->
+            <!-- end of accordion -->
+
+		</div> <!-- end of area-2 -->
+    </div> <!-- end of accordion -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 2 -->
+    <br>
+    <br>
+
+	<div class="tabs" style="background-image: url('{{url_for('static', filename='background5.jpg')}}')" >
+        <div class="area-1"  >
+
+            <div class="tabs-container" >
+                
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="ariaTabs" role="tablist" >
+                    <li class="nav-item">
+
+
+                </ul>
+
+                <!-- end of tabs links -->
+                
+                <!-- Tabs Content -->
+                <div class="tab-content" id="ariaTabsContent">
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <h2>Forex Education</h2>
+                        <p>SmartmouseFX will equip you with the nesecary knowledge to suit your trading needs. You can view the <a class="green page-scroll" href="#services">lessons</a> we offer</p>
+                        <h5>Here are some of the modules</h5><br>
+                        {% for post in posts%}
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="{{ url_for('post', post_id=post.id)}}">{{post.title}}</a>
+                        </div>
+                        <br>
+                        {%endfor%}
+
+
+
+
+
+                        
+                    </div> <!-- end of tab-pane --> 
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <ul class="list-unstyled li-space-lg first">
+                            <li class="media">
+                                <div class="media-bullet">1</div>
+                                <div class="media-body"><strong>High quality</strong> is on top of our list when it comes to the way we deliver the services</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">2</div>
+                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">3</div>
+                                <div class="media-body"><strong>Quality standards</strong> are important but meant to be exceeded</div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled li-space-lg last">
+                            <li class="media">
+                                <div class="media-bullet">4</div>
+                                <div class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">5</div>
+                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">6</div>
+                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#your-link">with huge potential</a></p>
+                        <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="#your-link">the stakeholders</a></p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">It's easy to get a quotation, just call our office anytime</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">We'll get back to you with an initial estimate soon</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Get ready to see results even after only 30 days</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Ask for a quote and start improving your business</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Just fill out the form and we'll call you right away</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of tabs-container -->
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
+    </div> <!-- end of tabs -->
+    <!-- end of details 2 -->
+
+
+
+
+
+    <!-- About -->
+    <div id="about" class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xl-6">
+                    <div class="image-container">
+                        <img src="{{url_for('static', filename='best-forex1.jpg')}}" class="responsive" />
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7 col-xl-6">
+                    <div class="text-container">
+                        <div class="section-title">ABOUT</div>
+                        <h2>We're Passionate About Forex Trading</h2>
+                        <p>Our goal is to provide the right Education, signals and reviews  at the appropriate time so you can benefit from the created momentum and thrive for a long period of time</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Everything we recommend has direct positive impact</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">You will become an important partner</div>
+                            </li>
+                        </ul>
+
+                        <!-- Counter -->
+                        <div id="counter">
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="1259"></div>
+                                <div class="counter-info">Happy<br>Users</div>
+                            </div>
+
+                        <!-- end of counter -->
+
+                    </div> <!-- end of text-container -->      
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of about -->
+
+
+    <!-- Contact -->
+
+
+
+    <!-- Footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="#">Tech-Tac Developers</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='jquery.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='popper.min.js')}}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script> <!-- Bootstrap framework -->
+    <script src="{{url_for('static', filename='jquery.easing.min.js')}}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{url_for('static', filename='swiper.min.js')}}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{url_for('static', filename='jquery.magnific-popup.js')}}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{url_for('static', filename='morphext.min.js')}}"></script> <!-- Morphtext rotating text in the header -->
+    <script src="{{url_for('static', filename='isotope.pkgd.min.js')}}"></script> <!-- Isotope for filter -->
+    <script src="{{url_for('static', filename='validator.min.js')}}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{{url_for('static', filename='scripts.js')}}"></script> <!-- Custom scripts -->
+</body>
+</html>

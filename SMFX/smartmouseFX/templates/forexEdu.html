@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>SmartMouseFX - Forex Education</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="{{url_for('static', filename='bootstrap.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='fontawesome-all.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='swiper.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='magnific-popup.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename='styles.css')}}" rel="stylesheet">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <h2>SmartMouseFX</h2>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="{{url_for('static', filename='menu.png')}}" />
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/">HOME </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/edu">FOREX EDUCATION <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="s&sp">SIGNALS & SIGNAL PlANS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/r&r">RATINGS AND REVIEWS</a>
+                </li>
+
+
+                <!-- Dropdown Menu -->
+
+                <!-- end of dropdown menu -->
+
+
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <img src="{{url_for('static', filename='facebookicon.png')}}" />
+
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <img src="{{url_for('static', filename='twittericon.png')}}" />
+
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="ex-header" style="background-image: url('{{url_for('static', filename='forexEdu.jpeg')}}')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Forex Education</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a><img src="{{url_for('static', filename='angle-double-right.png')}}" /><span>Forex Education</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+
+    <!-- Privacy Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h3>Forex Modules/Lessons</h3>
+                       <!-- Services -->
+                        {% for post in posts%}
+                        <div class="col-md-6">
+                                <ul class="list-unstyled li-space-lg indent">
+                                    <li class="media">
+
+                                        <img src="{{url_for('static', filename='bulleticon.png')}}" />
+                                        <div class="media-body"><h2><a href="{{ url_for('post', post_id=post.id)}}"> {{post.title}}</a></h2></div>
+                                    </li>
+                                    <br>
+
+
+                                </ul>
+                            </div> <!-- end of col -->
+                        {%endfor%}
+
+
+
+
+                            <!-- Privacy Form -->
+
+                        </div> <!-- end of col-->
+                    </div> <!-- end of row -->
+
+                </div> <!-- end of col-->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+<a class="btn-outline-reg back" href="/">BACK</a>
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a><img src="{{url_for('static', filename='angle-double-right.png')}}" /><span>Forex Education</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+
+
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="#">Tech-Tac Developers</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='jquery.min.js')}}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{url_for('static', filename='popper.min.js')}}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script> <!-- Bootstrap framework -->
+    <script src="{{url_for('static', filename='jquery.easing.min.js')}}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{url_for('static', filename='swiper.min.js')}}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{url_for('static', filename='jquery.magnific-popup.js')}}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{url_for('static', filename='morphext.min.js')}}"></script> <!-- Morphtext rotating text in the header -->
+    <script src="{{url_for('static', filename='isotope.pkgd.min.js')}}"></script> <!-- Isotope for filter -->
+    <script src="{{url_for('static', filename='validator.min.js')}}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{{url_for('static', filename='scripts.js')}}"></script> <!-- Custom scripts -->
+</body>
+</html>
